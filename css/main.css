@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 2.027rem;
+	font-family: Lato, sans-serif;
+} 
+
+h2 {
+	font-size: 1.802rem;
+	font-family: Lato, sans-serif;
+}
+
+h3{
+	font-size:1.424rem;
+	font-family: Lato, sans-serif;
+}
+
+h4{
+	font-family: Lato, sans-serif;
+}
+
+h5{
+	color: #d69e3d;
+	font-family: Lato, sans-serif;
+}
+
+p {
+	font-family: Karla, sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+header{
+    background:black;
+}
+
+
+.logo {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+nav {
+	color: white;
+
+}
+
+.main {
+	background-color: #f3f0e9;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	justify-content: space-evenly;
+	font-family: lato;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+}	
+
+.explore {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/hero-background.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+
+}
+
+.explore h2 {
+	display:flex;
+	color: white;
+	font-family: lato;
+    font-weight: 900;
+	justify-items: center;
+	align-items: center;
+	padding-bottom: 1rem;
+	padding-top:11rem;
+	padding-inline: 4rem;
+	text-align: center;
+}
+
+.explore p {
+	color: white;
+	font-family: Karla;
+	text-align: center;
+	padding-bottom: 2rem;
+	padding-inline: 6.5rem;
+}
+
+.explore button {
+	background-color: white;
+	color: black;
+	font-family: Karla;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	margin-bottom: 4rem;
+	border: none;
+	font-weight: 900;
+	font-size:large;
+}
+
+.welcomehead {
+	background-color: #f3f0e9;
+	padding-top: 5rem;
+	padding-bottom: 1rem;
+}
+
+.welcome {
+	background-color: #f3f0e9;
+	padding-left: 0.5rem;
+	padding-bottom: 2rem;
+	padding-right: 0.5rem;
+	font-weight: 600;
+}
+
+.images {
+	padding-top: 2.3rem;
+	padding-bottom: 1.5rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding-top: 1rem;
+}
+
+.offerhead {
+	background-color: #f3f0e9;
+	padding-top: 2rem;
+	text-align: center;
+	
+}
+
+.offerhead h4 {
+	padding-top: 1rem;
+	font-size: 2em;
+}
+
+.one {
+	background-color: #f3f0e9;
+	max-width: 300px;
+}
+
+.two {
+	background-color: #f3f0e9;
+}
+
+.three {
+	background-color: #f3f0e9;
+}
