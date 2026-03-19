@@ -73,6 +73,7 @@ h4{
 h5{
 	color: #d69e3d;
 	font-family: Lato, sans-serif;
+	font-size: 17px;
 }
 
 p {
@@ -277,3 +278,200 @@ li a {
 	padding-top: 30px;
 }
 
+.menu {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/coffee-shop.jpeg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.menu h5 {
+	padding-top: 70px;
+	padding-bottom: 15px;
+}
+
+.menu h3{
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	padding-inline: 80px;
+}
+
+.menu button {
+	background-color: white;
+	color: black;
+	font-family: Karla;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	margin-top: 2.5rem;
+	border: none;
+	font-weight: 900;
+	font-size:large;
+}	
+
+.menu .button {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+
+.storys {
+	background-color: #f3f0e9;
+	margin-top: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*storys h3 h5 p */
+
+.storys h5 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.storys h3 {
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+
+.storys p {
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+
+.storys button {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	font-family: Karla;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	margin-top: .5rem;
+	margin-bottom: 5rem;
+	border: none;
+	font-weight: 900;
+	font-size:large;
+}
+
+.testihead {
+	background-color: black;
+	
+}
+
+.testihead h5 {
+	padding-left: 10px;
+	padding-top: 80px;
+}
+
+.testihead h3 {
+	padding-top: 15px;
+	padding-left: 10px;
+	color: white;
+	font-weight: 700;
+	width: 70%;
+	padding-bottom: 40px;
+}
+
+.testis {
+	background-color: black;
+	padding: 10px;
+	padding-bottom: 100px;
+}
+
+.jane {
+	position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/testimonial-1.jpeg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	height: 500px;
+	color: white;
+}
+
+.jane p {
+	position: absolute;
+	bottom: 50px;
+	text-align: left;
+	padding: 25px;
+}
+
+
+.jane h5 {
+	position: absolute;
+	bottom: 20px;
+	text-align: bottom;
+	align-items: bottom;
+	padding: 25px;
+}
+
+.scott {
+	margin-top: 20px;
+	
+	position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/testimonial-2.jpeg");
+	background-position: top;
+	background-size: cover;
+	height: 500px;
+	color: white;
+}
+
+.scott p {
+	position: absolute;
+	bottom: 50px;
+	text-align: left;
+	padding: 25px;
+}
+
+
+.scott h5 {
+	position: absolute;
+	bottom: 20px;
+	text-align: bottom;
+	align-items: bottom;
+	padding: 25px;
+}
+
+.susie {
+	margin-top: 20px;	
+	position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/testimonial-3.jpeg");
+	background-position: top;
+	background-size: cover;
+	height: 500px;
+	color: white;
+}
+
+.susie p {
+	position: absolute;
+	bottom: 50px;
+	text-align: left;
+	padding: 25px;
+}
+
+
+.susie h5 {
+	position: absolute;
+	bottom: 20px;
+	text-align: bottom;
+	align-items: bottom;
+	padding: 25px;
+}
+
+.line {
+    height: 1px;
+    background-color: #333;  /* Slightly lighter than black */
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+    width: 100%; 
+    border-top: 1px solid #484848;
+	padding-bottom: 50px;
+}
