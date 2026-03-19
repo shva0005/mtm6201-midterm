@@ -99,7 +99,7 @@ nav {
 
 }
 
-.main {
+main {
 	background-color: #f3f0e9;
 }
 
@@ -186,25 +186,94 @@ li a {
 
 .offerhead {
 	background-color: #f3f0e9;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	text-align: center;
-	
+}
+
+.offerhead h5 {
+	padding-top: 1rem;
+	font-size: 15px;
 }
 
 .offerhead h4 {
-	padding-top: 1rem;
-	font-size: 2em;
+	font-size: 30px;
+	padding-top: 10px;
+	font-weight: 600;
+	padding-bottom: 4rem;
 }
 
 .one {
 	background-color: #f3f0e9;
-	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.one p {
+	max-width:400px;
+	text-align: center;
+}
+
+.one h3 {
+	padding-top: 10px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.one img {
+	width: 150px;
 }
 
 .two {
 	background-color: #f3f0e9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	padding-top: 100px;	
+}
+
+.two p {
+	max-width:420px;
+	text-align: center;
+}
+
+.two img {
+	width: 150px;
+}
+
+.two h3 {
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 10px;
 }
 
 .three {
 	background-color: #f3f0e9;
+	padding-top: 100px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 100px;
 }
+
+.three img {
+	width: 150px;
+}
+
+.three p {
+	padding-top: 10px;
+	max-width: 450px;
+	text-align: center;
+}
+
+.three h3 {
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 30px;
+}
+
