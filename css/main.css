@@ -47,9 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+/* END OF CSS RESET */
+
 body{
 	max-width: 100%;
 }
+
+/* HEADER SIZE AND FONT STYLING */
 
 h1 {
 	font-size: 2.027rem;
@@ -88,11 +92,27 @@ header{
     background:black;
 }
 
+/* CENTERING AND SPACING LOGO */
 
 .logo {
 	display: flex;
 	justify-content: center;
 	padding-top: 30px;
+}
+
+.logo {
+  animation: scaleIn 1.3s ease forwards; /* 1.5 second scale animation */
+}
+
+
+/*defines my scale animation*/
+@keyframes scaleIn { 
+  from {
+    transform: scale(0.2); /* 0.2 is the scale it starts at */
+  }
+  to {
+    transform: scale(1); /* 1 is where it finishes at */
+  }
 }
 
 nav {
@@ -104,12 +124,15 @@ main {
 	background-color: #f3f0e9;
 }
 
+/* NAVIGATION SECTION 
+making space between nav links and keeping them in a row */
 nav ul {
 	display: flex;
 	flex-direction: row;
 	padding: 30px;
 	justify-content: space-evenly;
 	font-family: lato;
+	animation: scaleIn 2.4s ease forwards; /* 2.4 second scale animation */
 }
 
 li a {
@@ -117,10 +140,12 @@ li a {
 	color: white;
 }	
 
+/* EXPLORE SECTION
+using the image as a dark background and to put the text over it */
 .explore {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/hero-background.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; /*keeps the image the same as the example */
 	text-align: center;
 
 }
@@ -130,10 +155,8 @@ li a {
 	color: white;
 	font-family: lato;
     font-weight: 900;
-	justify-items: center;
-	align-items: center;
-	padding-bottom: 1rem;
-	padding-top:11rem;
+	padding-bottom: 1rem; /*space between text and header */
+	padding-top:11rem; /*puts space between the text and nav, also enlarging the image to match example */
 	padding-inline: 4rem;
 	text-align: center;
 }
@@ -143,20 +166,28 @@ li a {
 	font-family: Karla;
 	text-align: center;
 	padding-bottom: 2rem;
-	padding-inline: 6.5rem;
+	padding-inline: 6.5rem; /*to keep the text looking like the example */
 }
 
-.explore button {
+.explore button { 
 	background-color: white;
 	color: black;
 	font-family: Karla;
 	justify-content: center;
 	align-items: center;
-	padding: 15px 30px;
-	margin-bottom: 4rem;
+	padding: 15px 30px; /*makes the button as big as the one in the example */
+	margin-bottom: 4rem; /*puts space between the button and the bottom of the section */
 	border: none;
-	font-weight: 900;
-	font-size:large;
+	font-weight: 900; /*makes the text bold */
+	font-size:large; 
+	animation: scaleIn 3.2s ease forwards; /* 3.2s scale animation to make the animations seem to go downwards */
+}
+
+.explore button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s; /* animates the button's hover transition to black */
 }
 
 .welcomehead {
@@ -167,20 +198,20 @@ li a {
 
 .welcome {
 	background-color: #f3f0e9;
-	padding-left: 0.5rem;
+	padding-left: 0.5rem; /*padding pushes images inward to create the background border between images and sides */
 	padding-bottom: 2rem;
 	padding-right: 0.5rem;
 	font-weight: 600;
 }
 
 .images {
-	padding-top: 2.3rem;
+	padding-top: 2.3rem; 
 	padding-bottom: 1.5rem;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: grid; 
+	grid-template-columns: 1fr 1fr; /* puts the 4 images into a 2x2 grid underneath the large one with gap and padding adding spacing between */
 	gap: 1rem;
 	padding-top: 1rem;
 }
@@ -191,7 +222,7 @@ li a {
 	text-align: center;
 }
 
-.offerhead h5 {
+.offerhead h5 { 
 	padding-top: 1rem;
 	font-size: 15px;
 }
@@ -205,22 +236,22 @@ li a {
 
 .one {
 	background-color: #f3f0e9;
-	display: flex;
+	display: flex; /*allows to center the image, text, and to keep everything in a column */
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 20px;
+	gap: 20px; /*space between text and header */
 }
 
 .one p {
-	max-width:400px;
+	max-width:400px; /* keeps the text within a certain space to keep it exactly how it looks in the example */
 	text-align: center;
 }
 
 .one h3 {
 	padding-top: 10px;
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 700; 
 }
 
 .one img {
@@ -228,7 +259,7 @@ li a {
 }
 
 .two {
-	background-color: #f3f0e9;
+	background-color: #f3f0e9; /*i just copy and pasted the first one */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -238,7 +269,7 @@ li a {
 }
 
 .two p {
-	max-width:420px;
+	max-width: 420px; 
 	text-align: center;
 }
 
@@ -253,7 +284,7 @@ li a {
 }
 
 .three {
-	background-color: #f3f0e9;
+	background-color: #f3f0e9; /* copy pasted the second one */
 	padding-top: 100px;	
 	display: flex;
 	justify-content: center;
@@ -279,7 +310,7 @@ li a {
 }
 
 .menu {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/coffee-shop.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/coffee-shop.jpeg"); /*uses the image and sets it darker using the gradient */
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -287,7 +318,7 @@ li a {
 }
 
 .menu h5 {
-	padding-top: 70px;
+	padding-top: 70px; 
 	padding-bottom: 15px;
 }
 
@@ -301,20 +332,34 @@ li a {
 .menu button {
 	background-color: white;
 	color: black;
-	font-family: Karla;
+	font-family: Karla; /* uses the karla font for the button */
 	justify-content: center;
 	align-items: center;
-	padding: 15px 30px;
+	padding: 15px 30px; /*sets the size of the button */
 	margin-top: 2.5rem;
 	border: none;
 	font-weight: 900;
 	font-size:large;
 }	
 
-.menu .button {
-	background-color: black;
+.menu button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s; /* animates the button's hover transition to black */
+}
+
+.menu .button { 
+	background-color: black; 
 	color: white;
 	border: 2px solid white;
+}
+
+.menu .button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.3s; /* animates the button's hover transition to white*/
 }
 
 .storys {
@@ -323,8 +368,6 @@ li a {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-/*storys h3 h5 p */
 
 .storys h5 {
 	padding-top: 15px;
@@ -353,7 +396,14 @@ li a {
 	margin-bottom: 5rem;
 	border: none;
 	font-weight: 900;
-	font-size:large;
+	font-size:large; /* sets the text size */
+}
+
+.storys button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.3s; /* animates the button's hover transition to black */
 }
 
 .testihead {
@@ -382,12 +432,12 @@ li a {
 }
 
 .jane {
-	position: relative;
+	position: relative; 
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/testimonial-1.jpeg");
 	background-position: center;
-	background-size: cover;
+	background-size: cover; /*ensures the correct portion of the picture is shown */
 	text-align: center;
-	height: 500px;
+	height: 500px; 
 	color: white;
 }
 
@@ -402,14 +452,11 @@ li a {
 .jane h5 {
 	position: absolute;
 	bottom: 20px;
-	text-align: bottom;
-	align-items: bottom;
 	padding: 25px;
 }
 
 .scott {
-	margin-top: 20px;
-	
+	margin-top: 20px; /* puts space between scott and jane */
 	position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/testimonial-2.jpeg");
 	background-position: top;
@@ -429,8 +476,6 @@ li a {
 .scott h5 {
 	position: absolute;
 	bottom: 20px;
-	text-align: bottom;
-	align-items: bottom;
 	padding: 25px;
 }
 
@@ -455,8 +500,6 @@ li a {
 .susie h5 {
 	position: absolute;
 	bottom: 20px;
-	text-align: bottom;
-	align-items: bottom;
 	padding: 25px;
 }
 
@@ -468,10 +511,10 @@ li a {
 
 footer {
     background-color: black;
-    color: #fff; 
+    color: #fff; /*copyright text colour */
     padding: 20px 0; 
     text-align: center; 
     width: 100%; 
-    border-top: 1px solid #484848;
+    border-top: 1px solid #484848; /*makes that really cool looking line */
 	padding-bottom: 50px;
 }
